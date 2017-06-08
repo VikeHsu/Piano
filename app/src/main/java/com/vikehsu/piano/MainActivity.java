@@ -9,6 +9,10 @@ public class MainActivity extends AppCompatActivity {
     private PianoKey KEY_1;
     private PianoKey KEY_2;
     private PianoKey KEY_3;
+    private PianoKey KEY_4;
+    private PianoKey KEY_5;
+    private PianoKey KEY_6;
+    private PianoKey KEY_7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +23,18 @@ public class MainActivity extends AppCompatActivity {
         KEY_1 = (PianoKey)findViewById(R.id.key1);
         KEY_2 = (PianoKey)findViewById(R.id.key2);
         KEY_3 = (PianoKey)findViewById(R.id.key3);
+        KEY_4 = (PianoKey)findViewById(R.id.key4);
+        KEY_5 = (PianoKey)findViewById(R.id.key5);
+        KEY_6 = (PianoKey)findViewById(R.id.key6);
+        KEY_7 = (PianoKey)findViewById(R.id.key7);
 
         KEY_1.init("C",R.raw.piano_ff_c3_01);
         KEY_2.init("D",R.raw.piano_ff_d3_01);
         KEY_3.init("E",R.raw.piano_ff_e3_01);
+        KEY_4.init("F",R.raw.piano_ff_f3_01);
+        KEY_5.init("G",R.raw.piano_ff_g3_01);
+        KEY_6.init("A",R.raw.piano_ff_a3_01);
+        KEY_7.init("B",R.raw.piano_ff_b3_01);
     }
 
     private void setImmersiveMode(){
