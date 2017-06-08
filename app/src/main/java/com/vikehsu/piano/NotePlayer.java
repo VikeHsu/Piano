@@ -2,12 +2,13 @@ package com.vikehsu.piano;
 
 import android.content.Context;
 import android.media.MediaPlayer;
+import android.os.CountDownTimer;
 
 public class NotePlayer {
     private MediaPlayer note = null;
     private boolean isTimeout = false;
     private boolean isPressed = false;
-    private timer = new CountDownTimer(1000, 1000) {
+    private CountDownTimer timer = new CountDownTimer(1000, 1000) {
         public void onTick(long millisUntilFinished) {
         }
         public void onFinish() {
